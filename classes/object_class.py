@@ -17,11 +17,7 @@ class Fish(Animal):
 
 
 monkey = Mammal()
-monkey.walk()
-monkey.eat()
-print(f"this monkey's age is {monkey.age}")
-
-tuna = Fish()
-tuna.swim()
-tuna.eat()
-print(f"this tuna's age is {tuna.age}")
+print(isinstance(monkey, Animal))
+print(issubclass(Mammal, Animal))
+print(isinstance(monkey, object))
+print(issubclass(Mammal, object))
